@@ -10,6 +10,8 @@
 		<!-- Loading third party fonts -->
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" >
+		<link href="w3.css" rel="stylesheet" >
+
 
 		<!-- Loading main css file -->
 		<link href="style.css" rel="stylesheet" >
@@ -56,12 +58,39 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8">
-								<figure><img src="dummy/lawyers.jpg" alt=""></figure>
+								<!-- <figure><img src="dummy/lawyers.jpg" alt=""></figure> -->
+
+								<div class="w3-content w3-section" style="max-width:100%;">
+									  <img class="mySlides" src="images/slider1.jpg" style="width:100%">
+									  <img class="mySlides" src="images/slider2.jpg" style="width:100%">
+
+									
+								   <img class="mySlides" src="images/slider3.jpg" style="width:100%">
+								 																 
+									</div>
+
+									<script>
+									var myIndex = 0;
+									carousel();
+
+									function carousel() {
+									    var i;
+									    var x = document.getElementsByClassName("mySlides");
+									    for (i = 0; i < x.length; i++) {
+									       x[i].style.display = "none";  
+									    }
+									    myIndex++;
+									    if (myIndex > x.length) {myIndex = 1}    
+									    x[myIndex-1].style.display = "block";  
+									    setTimeout(carousel, 2000); // Change image every 2 seconds
+									}
+									</script>
+
 							</div>
 							<div class="col-md-4">
 								<div class="hero-content">
 									<h4 class="hero-title">S.D. PATEL AND ASSOCIATES</h4>
-									<p style="text-align: justify;">To insistently symbolize our clients through excellence counsel and advocacy through uncompromising enthusiasm, devotion and ethical standards</p>
+									<p style="text-align: justify;">To insistently symbolize our clients through excellence counsel and advocacy through uncompromising enthusiasm, devotion and ethical standards.</p>
 									<a href="about.html" class="button">Read more</a>
 								</div>
 							</div>
@@ -74,7 +103,16 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Welcome to our website</h2>
-								<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto labore alias nobis quam suscipit aut nostrum neque quibusdam eligendi explicabo, animi, eius beatae. Deleniti at, nam fuga accusamus non reprehenderit.  amet, consectetur adipisicing elit. Architecto labore alias nobis quam suscipit aut nostrum neque quibusdam eligendi explicabo, animi, eius beatae. Deleniti at, nam fuga accusamus non reprehenderit.amet, consectetur adipisicing elit. Architecto labore alias nobis quam suscipit aut nostrum neque quibusdam eligendi explicabo, animi, eius beatae. Deleniti at, nam fuga accusamus non reprehenderit.</p>
+								<p style="text-align: justify;">
+									S. D. PATEL &amp; ASSOCIATES is one of Vadodara’s leading full service law firms, offering an extensive series of transactional, regulatory, advisory and dispute resolution services. We advise
+						a various clients which include domestic and international. Based out of Vadodara, the firm has
+						productively been capable to create its identity outside its origins, dealing with significant depth
+						in multifarious issues. The key reason behind setting up law firm was its founding partners’
+						desire to bring user service into sharper focus and to provide commercially practicable legal
+						advice in all segment of the market. Reserved uniqueness which set us apart from a conservative
+						firm are a high degree of associate contribution and accessibility, top eminence commercially
+						leaning legal guidance, notice to element, sensitivity and elastic receipt policy.
+								</p>
 							</div>
 							<!-- <div class="col-md-4">
 								<div class="latest-news">
@@ -193,26 +231,14 @@
 
 			<footer class="site-footer">
 				<div class="container">
-					<!-- <div class="subscribe-form">
-						<form action="#">
-							<label for="#">
-								<span>Do you want to get news?</span>
-								<span>Join our news letter</span>
-							</label>
-							<div class="control">
-								<input type="text" placeholder="Enter your email to subscribe...">
-								<button type="submit"><img src="images/icon-envelope.png" alt=""></button>
-														</form>
-							</div>
-					</div>
-					 --><div class="social-links">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
+					
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/s-d-patel-and-associates-223026165" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://twitter.com/SDPATELANDASSO1" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://plus.google.com/u/4/117108265681327605128" target="_blank"><i class="fa fa-google-plus"></i></a>
 					</div>
 					<div class="copy">
-						<p>Copyright 2018 S.D PATEL & ASSOCIATES. All rights reserved.</p>
+						<p>Copyright 2018 S.D PATEL & ASSOCIATES. All rights reserved.Created by Nisha Parikh(7623936347)</p>
 					</div>
 				</div>
 			</footer> <!-- .site-footer -->

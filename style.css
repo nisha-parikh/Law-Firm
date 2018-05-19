@@ -1048,7 +1048,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 35, sass/layout/_content.scss */
 .hero img { display: block; max-width: 100%; }
 /* line 39, sass/layout/_content.scss */
-.hero .hero-content { margin-top: 40%; }
+.hero .hero-content { margin-top: 30%; }
 @media screen and (max-width: 990px) { /* line 39, sass/layout/_content.scss */
   .hero .hero-content { margin-top: 0; padding: 50px 0; } }
 /* line 47, sass/layout/_content.scss */
@@ -1058,7 +1058,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 
 /* Footer Styles */
 /* line 5, sass/layout/_footer.scss */
-.site-footer { background-color: #111113; padding: 50px 0; text-align: center; }
+.site-footer { background-color: #111113; padding: 5px 0; text-align: center; }
 
 /* line 11, sass/layout/_footer.scss */
 .subscribe-form { margin-bottom: 30px; background-color: #0c0c0d; padding: 30px; text-align: left; }
