@@ -18,6 +18,70 @@
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
+		<style>
+
+		/* Extra styles for the cancel button */
+		.cancelbtn {
+		    width: auto;
+		    padding: 10px 18px;
+		    background-color: #f44336;
+		}
+
+		/* Center the image and position the close button */
+
+
+				img.avatar {
+				   
+				    border-radius: 50%;
+				}
+				.imgcontainer {
+					 text-align: center;
+					margin: 24px 0 12px 0;
+					position: relative;
+							}
+					.modal {
+			 
+				    display: none; /* Hidden by default */
+				    position: fixed; /* Stay in place */
+				    z-index: 1; /* Sit on top */
+				    left: 0;
+				    top: 0;
+				   
+				    width: 100%; /* Full width */
+				    height:100%; /* Full height */
+				    overflow: auto; /* Enable scroll if needed */
+				    background-color: rgb(0,0,0); /* Fallback color */
+				    background-color: rgba(0,0,0,1); /* Black w/ opacity */
+				   
+				}
+
+
+				/* Modal Content/Box */
+				.modal-content {
+				    background-color: #fefefe;
+				    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+				    border: 1px solid #e4e4e4;
+				    width: 80%; /* Could be more or less, depending on screen size */
+				}
+
+				/* The Close Button (x) */
+				.close {
+				    position: absolute;
+				    right: 25px;
+				    top: 0;
+				    color:white;
+				    font-size: 35px;
+				    font-weight: bold;
+				}
+
+				.close:hover,
+				.close:focus {
+				    color: red;
+				    cursor: pointer;
+				}
+
+
+		</style>
 
 	</head>
 
@@ -55,26 +119,73 @@
 				
 				<div class="fullwidth-block content">
 					<div class="container">
-						
+						<script>
+						// Get the modal
+						function getModal(id)
+						{
+						var modal = document.getElementById(id);
+						id.style.display="block";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						    if (event.target == modal) {
+						        modal.style.display = "none";
+						    }
+						}
+						</script>
+
+						<div class="row">
+							<div class="col-md-4">
+
 						<div class="team" style="width:100%;">
-							<figure class="team-image"><img src="dummy/person-1.png" alt="person-1"></figure>
-							<h3 class="team-name">SURYAKANT D. PATEL</h3>
-							<small class="team-desc teamDescription">Senior Advocate</small>
-							<p style="text-align: justify;">
+							<span onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+								<figure class="team-image"><img src="images/person1.jpeg" alt="person-1"></figure>
+								<h3 class="team-name">SURYAKANT D. PATEL</h3>
+								<small class="team-desc teamDescription">Senior Advocate</small>
+							</span>
+							
+							<div id="id01" class="modal">
+								<div class="imgcontainer">
+      							<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
+      							<img src="images/person1.jpeg" alt="person-1" class="logo avatar">
+    							</div>
+
+					   			<div class="container">
+					   			<h3 class="team-name">SURYAKANT D. PATEL</h3>
+								<small class="team-desc teamDescription">Senior Advocate</small>	
+					     		<p style="text-align: justify;">
 								Practicing since 1973 in Vadodara District and Session Court, qualified as Advocate and Tax
 								practitioner from The Maharaja Sayajirao University Of Baroda in 1967. Worked as a partner in
 								Air Auto Engineering Firm, Mumbai and retired in 1972. Activity had been an Arbitrator in
 								some of the major cases. S.D.Patel is also an energetic member in Baroda Bar Council. Mainly
 								focuses in matters of Land Laws, Rent Acts, Trademark, Taxation, Civil and Criminal Matters.
 								Appeared For various subject in Anand District And Session Court, Mumbai Courts etc.
-							</p>
+								</p>
+   						</div>
+   					</div>	
+								</div>
 						</div>
 			
+
+						<div class="col-md-4">
 						<div class="team" style="width:100%;">
+						<span onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
 							<figure class="team-image"><img src="dummy/person-2.png" alt="person-2"></figure>
-							<h3 class="team-name">BRIJESH PATEL</h3>
+							<h3 class="team-name">BRIJESH S. PATEL</h3>
 							<small class="team-desc">Advocate</small>
-							<p style="text-align: justify;">
+						</span>
+						</div>
+						<div id="id02" class="modal">
+								<div class="imgcontainer">
+      							<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Window">&times;</span>
+      							<img src="dummy/person-1.png" alt="person-1" class="logo avatar">
+    							</div>
+
+					   			<div class="container">
+					   			<h3 class="team-name">BRIJESH S. PATEL</h3>
+								<small class="team-desc">Advocate</small>
+								<p style="text-align: justify;">
 								Established Practice in 2000 at Gujarat High Court. Later on moved to Vadodara City and
 								prolonged practice in Vadodara District and Session Court, revenue courts and other respected
 								tribunals. Passed B.Sc. honors’ in (Chemistry) in 1997 from The Maharaja Sayajirao University
@@ -85,13 +196,29 @@
 								Documents. Has been elected as a committee member of Baroda Bar Association in 2010-2011.
 								Have materialized in Gujarat High Court for various matters related to Land Disputes, Civil And
 								Commercial Laws.
-							</p>
+								</p>
+								</div>
 						</div>
+					</div>				
+
+						<div class="col-md-4">
 						<div class="team" style="width:100%;">
-							<figure class="team-image"><img src="dummy/person-3.png" alt="person-3"></figure>
-							<h3 class="team-name">ASHUTOSH BHATT</h3>
+							<span onclick="document.getElementById('id03').style.display='block'" style="width:auto;">
+							<figure class="team-image"><img src="images/person3.jpeg" alt="person-3"></figure>
+							<h3 class="team-name">ASHUTOSH S. BHATT</h3>
 							<small class="team-desc">Advocate</small>
-							<p style="text-align: justify;">
+							</span>
+
+							<div id="id03" class="modal">
+								<div class="imgcontainer">
+      							<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Window">&times;</span>
+      							<img src="images/person3.jpeg" alt="person-1" class="logo avatar">
+    							</div>
+
+					   			<div class="container">
+					   			<h3 class="team-name">ASHUTOSH S. BHATT</h3>
+								<small class="team-desc">Advocate</small>
+								<p style="text-align: justify;">
 								Started practice in 2004 at Vadodara District and Sessions Court. Perused B.A (Economics) in
 								2000 from Gujarat Technological University, then after completed L.L.B. from Sardar Patel
 								University, Gujarat. Encompass thoroughly knowledge in Criminal, Family Laws and Labour
@@ -101,13 +228,32 @@
 								High Court (Sola Ahmedabad). Apart from being a splendid advocate he is also a national level
 								cricket player who represents Gujarat Advocate Cricket’s Association in national as well as in
 								international cricket tournament organized by various Advocate Associations.
-							</p>
+								</p>
+								</div>
+							</div>
 						</div>
+					</div>
+				</div>
+
+						<div class="row">
+							<div class="col-md-6">
 						<div class="team" style="width:100%;">
-							<figure class="team-image"><img src="dummy/person-4.png" alt="person-4"></figure>
-							<h3 class="team-name">HITESH MISHRA</h3>
+							<span onclick="document.getElementById('id04').style.display='block'" style="width:auto;">
+							<figure class="team-image"><img src="images/person4.jpeg" alt="person-4"></figure>
+							<h3 class="team-name">HITESH S. MISHRA</h3>
 							<small class="team-desc">Advocate</small>
-							<p style="text-align: justify;">
+							</span>
+
+							<div id="id04" class="modal">
+								<div class="imgcontainer">
+      							<span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Window">&times;</span>
+      							<img src="images/person4.jpeg" alt="person-1" class="logo avatar">
+    							</div>
+
+					   			<div class="container">
+					   			<h3 class="team-name">HITESH S. MISHRA</h3>
+								<small class="team-desc">Advocate</small>
+								<p style="text-align: justify;">
 								Joined the firm in year 2016, been a qualified Advocate passed All India Bar Council Exam in
 								2017. Accomplished B.com &amp; L.L.B. from The M.S.University Of Baroda. Primarily looks
 								towards various court proceedings in Vadodara, Ahmedabad, Anand and Savli Courts. Primarily
@@ -115,52 +261,64 @@
 								Registration etc.
 								Worked as: Junior Sales Executive Officer in ICICI Bank Vadodara
 								Internal Audit Officer in CA Firm. Vadodara
-							</p>
+								</p>
+								</div>
+							</div>
 						</div>
+					</div>
 
+						<div class="col-md-6">
 						<div class="team" style="width:100%;">
+							<span onclick="document.getElementById('id05').style.display='block'" style="width:auto;">
 							<figure class="team-image"><img src="dummy/person-4.png" alt="person-4"></figure>
-							<h3 class="team-name">SANDEEP MONDAL</h3>
+							<h3 class="team-name">SANDEEP M. MONDAL</h3>
 							<small class="team-desc">Advocate</small>
-							<p style="text-align: justify;">
+							</span>
+
+							<div id="id05" class="modal">
+								<div class="imgcontainer">
+      							<span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Window">&times;</span>
+      							<img src="dummy/person-1.png" alt="person-1" class="logo avatar">
+    							</div>
+
+					   			<div class="container">
+					   			<h3 class="team-name">SANDEEP M. MONDAL</h3>
+								<small class="team-desc">Advocate</small>
+								<p style="text-align: justify;">
 								Initiated the career as an advocate, in 2016 by qualifying 10 th All India Bar Council Exam and
 								passed L.L.B. from The M.S.University of Baroda. M.Com (H.R.M.), Pgdshrm, and B.Com
 								from The M.S.University of Baroda. Handling matters relating to consumer disputes, trademark,
 								copyright, negotiable instrument, criminal, RTI, drafting &amp; pleading, civil laws etc. Conducted
 								research in the field of law and management in various corporate organization in Vadodara city.
 								Accomplish research in rights of farmers and e-governance while gain knowledge of law.
-							</p>
+								</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 						</div>
 					</div>
 				</div>
+			</div>
+
 
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
 				<div class="container">
-					<!-- <div class="subscribe-form">
-						<form action="#">
-							<label for="#">
-								<span>Do you want to get news?</span>
-								<span class>Join our news letter</span>
-							</label>
-							<div class="control">
-								<input type="text" placeholder="Enter your email to subscribe...">
-								<button type="submit"><img src="images/icon-envelope.png" alt=""></button>
-														</form>
-							</div>
-					</div>
-					 --><div class="social-links">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
+					
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/s-d-patel-and-associates-223026165" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://twitter.com/SDPATELANDASSO1" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://plus.google.com/u/4/117108265681327605128" target="_blank"><i class="fa fa-google-plus"></i></a>
 					</div>
 					<div class="copy">
-						<p>Copyright 2018 S.D PATEL & ASSOCIATES. All rights reserved.</p>
+						<p>Copyright 2018 S.D PATEL & ASSOCIATES. All rights reserved.Created by Nisha Parikh(7623936347)</p>
 					</div>
 				</div>
 			</footer> <!-- .site-footer -->
+
 
 		</div> <!-- #site-content -->
 

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Lawyers | About Us</title>
+		<title>Lawyers | Practice Areas</title>
 		
 		<!-- Loading third party fonts -->
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,43 @@
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
+		<style>
+		
+		
+		
+        		/* Style the buttons inside the tab */
+		.tab ul li{
 
+			text-decoration: none;
+     		color: #888;
+		    display: block;
+		    cursor: pointer;
+		    transition: 0.3s;
+		    
+		}
+
+		.tabcontent:not(#aa1)
+		{
+			display: none;
+		}
+
+		.tablink[id="defaultOpen"]
+		{
+			color:white;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab ul li:hover {
+		  color:white;
+		}
+
+		/* Create an active/current "tab button" class */
+		.tab ul li.active {
+		    color:white;
+		}
+
+    </style>
+	
 	</head>
 
 
@@ -56,27 +92,50 @@
 				
 				<div class="fullwidth-block content">
 					<div class="container">
-					<div class="col-md-4" style="color:#888;">
-						<!-- <h2 class="entry-title">Practice Areas	</h2> -->
-						<ul>
-							<a href="#aa1"><li>Commercial Laws</li></a>
-							<a href="#aa2"><li>Civil Laws</li></a>
-							<a href="#aa3"><li>Arbitration and Conciliation</li></a>
-							<a href="#aa4"><li>Intellectual Property Laws</li></a>
-							<a href="#aa5"><li>Criminal Laws</li></a>
-							<a href="#aa6"><li>Family Laws</li></a>
-							<a href="#aa7"><li>Domestic Violence</li></a>
-							<a href="#aa8"><li>Contracts</li></a>
-							<a href="#aa9"><li>Drafting and Registration Of Documents</li></a>
-							<a href="#aa10"><li>MOU</li></a>
-							<a href="#aa11"><li>GST and Income tax</li></a>
-							<a href="#aa12"><li>Export And Import</li></a>
-						</ul>		
+					<div class="col-md-4" style="color:#e4e4e4;">
+						<h2 class="entry-title">Practice Areas	</h2>
+						<script>
+							document.getElementById("defaultOpen").click();
+							function openContent(evt, Name) {
+							    var i, tabcontent, tablinks;
+							    tabcontent = document.getElementsByClassName("tabcontent");
+							    for (i = 0; i < tabcontent.length; i++) {
+							        tabcontent[i].style.display = "none";
+							    }
+							    tablinks = document.getElementsByClassName("tablinks");
+							    for (i = 0; i < tablinks.length; i++) {
+							        tablinks[i].className = tablinks[i].className.replace(" active", "");
+							    }
+							    document.getElementById(Name).style.display = "block";
+							    evt.currentTarget.className += " active";
+							}
+
+							// Get the element with id="defaultOpen" and click on it
+						</script>
+						<div class="tab">
+						<ul type="Circle">
+							
+							<li class="tablinks" id="defaultOpen" onclick="openContent(event, 'aa1')">Commercial Laws</li>
+							<li class="tablinks" onclick="openContent(event, 'aa2')">Civil Laws</li>
+							<li class="tablinks" onclick="openContent(event, 'aa3')">Arbitration and Conciliation</li>
+							<li class="tablinks" onclick="openContent(event, 'aa4')">Intellectual Property Laws</li>
+							<li class="tablinks" onclick="openContent(event, 'aa5')">Criminal Laws</li>
+							<li class="tablinks" onclick="openContent(event, 'aa6')">Family Laws</li>
+							<li class="tablinks" onclick="openContent(event, 'aa7')">Domestic Violence</li>
+							<li class="tablinks" onclick="openContent(event, 'aa8')">Contracts</li>
+							<li class="tablinks" onclick="openContent(event, 'aa9')">Drafting and Registration Of Documents</li>
+							<li class="tablinks" onclick="openContent(event, 'aa10')">MOU</li>
+							<li class="tablinks" onclick="openContent(event, 'aa11')">GST and Income tax</li>
+							<li class="tablinks" onclick="openContent(event, 'aa12')">Export And Import</li>
+							
+						</ul>
+						</div>		
 					</div>
+						
 					<div class="col-md-8" style="text-align: justify;font-size: 0.85em;">
 							
-						<div id="aa1">
-								<p><img src="images/practice1.jpg" alt="Commercial law" style="float:right;width:170px;height:170px;margin-left:15px;">
+						<div id="aa1" class="tabcontent">
+								<p><img src="images/practice1.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
 									Commercial law, more often alludes to law identifying with communications between the
 									organization and another outsider, for example, terms and conditions, permits, affiliate
 									understandings and so on. The commercial law gives the principles that traders and others
@@ -104,13 +163,230 @@
 										<li>Liquidation</li>
 									</ul>
 								</p>	
-						</div>	
+							</div>	
 
-						<div id="aa1">
-								<p>
+
+							<div id="aa2" class="tabcontent">
+								<p><img src="images/practice2.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Civil law is the law of the state, law of the land, law of the lawyers and law courts. In
+									measuring civil liability the law attaches more importance to the principal of
+									compensation than to that of fault. It also does not take account of probable or intended
+									consequences but only of the consequences, which actually ensue. The word civil is
+									derived from ‘jus civile&#39; of roman.<br/>
+									The Civil Law thus deals with civil or private rights with remedy as contrasted with
+									criminal laws where the state is involved. Civil Law is that body or branch of laws which
+									every particular nation or state or city has established peculiarly for itself. The objective
+									of civil law is to decide civil liability for an act or omission. Such liability is in various forms like damages, specific performance, compensation and various other segments like
+									property law, intellectual property law, civil aspects of the marital law etc.
+									<ul>
+										<li>Land Laws</li>
+										<li>Revenue Laws</li>
+										<li>Company Act</li>
+										<li>Securitisation &amp; Reconstruction Of Financial Assets &amp; Enforcement Of Security Interest</li>
+										<li>Labour Laws</li>
+										<li>Information Technology</li>
+										<li>Farmers Rights</li>
+										<li>Consumer Protection</li>
+										<li>Environmental Laws</li>	
+										<li>Specific Performance</li>
+									</ul>
 								</p>	
-						</div>
+							</div>
 
+							<div id="aa3" class="tabcontent">
+								<p><img src="images/practice3.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Arbitration is the means by which parties to a dispute get the same settled through the
+									intervention of a third person (or more persons) but without recourse to a Court of Law.
+									The settlement of dispute is arrived by the judgment of the third person (or more persons)
+									who are called Arbitrators. The essence of arbitration is thus based upon the principle of
+									keeping away the dispute from the ordinary Courts enabling the parties to substitute by a
+									domestic tribunal. Conciliation is an informal process in which the conciliator (the third
+									party) tries to bring the disputants to agreement. He does this by lowering tensions,
+									improving communications, interpreting issues, providing technical assistance, exploring
+									potential solutions and bringing about a negotiated settlement. Mediation is usually a
+									voluntary process that results in a signed agreement which defines the future behaviour of
+									the parties. The mediator uses a variety of skills and techniques to help the parties reach
+									the settlement, but is not empowered to render a decision.
+									<ul>
+										<li>Arbitration</li>
+										<li>Conciliation</li>
+										<li>Mediation</li>
+										<li>Lokadalat</li>
+									</ul>
+								</p>	
+							</div>		
+
+							<div id="aa4" class="tabcontent">
+								<p><img src="images/practice4.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									As the term intellectual property relates to the creations of human mind and human intellect, this
+									property is called Intellectual property. Creators can be given the right to prevent others from
+
+									using their inventions, designs or other creations and to use that right to negotiate payment in
+									return for others using them. These are Intellectual Property Rights.<br/>
+									The creation of Intellectual Property Rights (IPR) is increasingly being recognised in today’s
+									global economy and society. The intellectual property rights are now not only being used as a
+									tool to protect the creativity and generate revenue but also to build strategic alliances for the
+									socio-economic and technological growth.<br/>
+									The Convention establishing World Intellectual Property Organization, 1967 provides that the
+									intellectual property shall include rights relating to: (i) literary, artistic and scientific works; (ii)
+									performances of performing artists, phonograms and broadcasts; (iii) inventions in the field of
+									human endeavour; (iv) scientific discoveries; (v) industrial designs; (vi) trademarks, service
+									marks, commercial names and designations; (vii) protection against unfair competition; and all
+									other rights resulting from intellectual activity in the industrial, scientific, literary or artistic
+									fields.
+									<ul>
+										<li>Filing of IPR</li>
+										<li>Search report of IPR</li>
+										<li>Registration of IPR</li>
+										<li>Notice for infringement of IPR</li>
+										<li>Litigation and Objections</li>
+										<li>Criminal Laws</li>
+									</ul>
+								</p>	
+							</div>			
+
+							<div id="aa5" class="tabcontent">
+								<p><img src="images/practice5.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Criminal law in India means offenses against the state, it includes felonies and misdemeanors. The standard of proof for crimes is "beyond a reasonable doubt."<br/>
+									Criminal law is governed by Indian Penal Code, Crpc, Evidence Act etc. The term criminal law means crimes that may establish punishments. Crimes are usually categorized as felonies or misdemeanors based on their nature and the maximum punishment that can be imposed. A felony involves serious misconduct that is punishable by death or by imprisonment for more than one year. Crimes that do not amount to felonies are misdemeanors or violations. A misdemeanor is misconduct for which the law prescribes punishment of no more than one year in prison. Lesser offenses, such as traffic and parking infractions, are often called violations and are considered a part of criminal law.
+
+									<ul>
+										<li>Writs/PIL</li>
+										<li>Anticipatory Bail/ Bail</li>
+										<li>Notices/Quashing Of Fir</li>
+										<li>Indian Penal Code </li>
+										<li>Criminal Cases /Application/ Complaint</li>
+										<li>Juvenile Justice Care And Protection</li>
+										<li>Sexual offences</li>
+										<li>POCSO</li>
+										<li>Immoral trafficking/prohibition etc.</li>
+										<li>Negotiable Instrument</li>
+									</ul>
+								</p>	
+							</div>
+
+							<div id="aa6" class="tabcontent">
+								<p><img src="images/practice6.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Family Law is the branch of law, which touches each and every individual of the society. It governs an integral part of the life of the individual. In India we have a strange spectacle of personal laws. They owe their diversity to their varied origin, distinct principles and the bulk of substantive law itself. The personal laws play a vital role in governing the conflicting interest of the individuals.<br/> 
+
+									Study of Family Law is Unique. It is not like the rest of the civil laws. It lacks uniformity in application. It covers an enormous area of domestic relations such as marriage, matrimonial remedies, legitimacy of children, custody, guardianship, adoption, intestate and testamentary succession etc. Family Law also deals with laws relating to Hindu Joint family, devolution of ancestral or coparcenaries property, succession to separate property of a Hindu and the Muslim law relating to gifts, wills and inheritance. The rules relating to marriage, matrimonial remedies, legitimacy of children, custody, guardianship, adoption is of immense importance as it involves the sensitive relationship between individuals in the society.
+
+									<ul>
+										<li>Divorce Cases</li>
+										<li>Cruelty against Woman</li>
+										<li>Divorce by Mutual Consent</li>
+										<li>Family suit/ Hindu marriage petition</li>
+										<li>Maintenance application</li>
+										<li>Recovery of maintenance</li>
+										<li>Legitimacy of children</li>
+										<li>Guardianship</li>
+										<li>Adoption</li>
+									</ul>
+								</p>	
+							</div>
+
+							<div id="aa7" class="tabcontent">
+								<p><img src="images/practice7.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Domestic violence is sadly a reality in Indian society, a truism. In the Indian patriarchal setup, it became an acceptable practice to abuse women. From a feminist standpoint, it could be said that the occurrence of domestic violence against women arises out of the patriarchal setup, the stereotyping of gender roles and the distribution of power, real or perceived, in society. <br/>
+									For long, the fairer sex has suffered at the hands of men, the exploitation ranges from physical to intangible abuse like mental and psychological torture. Domestic violence is one of the gravest and the most pervasive human rights violation. For too long now, women have accepted it as their destiny or have just acquiescence their right to raise their voice, perhaps, because of the justice system or the lack of it or because they are vulnerable, scared of being ostracized by their own because domestic violence still remains a taboo for most women who suffer from it or for other reasons best known to them. But not any more! Women gear up-take control because of the domestic violence act, 2005.
+									<ul>
+										<li>Criminal complaint (Domestic Violence)</li>
+										<li>Criminal complaint (FIR)</li>
+										<li>Application for domestic violence</li>
+										<li>Application for Stridhan</li>
+										<li>Revitalization of Stridhan</li>
+										<li>Litigation</li>
+									</ul>
+								</p>	
+							</div>
+
+							<div id="aa8" class="tabcontent">
+								<p><img src="images/practice8.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									A contract is an agreement enforceable at law, made between two or more persons, by which rights are acquired by one or more to acts or forbearances on the part of the other or others. The Indian Contract Act, 1872 regulates all the transactions of a company.
+									<br/> 
+									The Law of Contract constitutes the most important branch of Mercantile or Commercial Law. It affects everybody, more so, trade, commerce and industry. It may be said that the contract is the foundation of the civilized world. Therefore, it is essential for the students to be familiar with the law relating to Contract.
+
+									<ul>
+										<li>Indemnity</li>
+										<li>Guarantee</li>
+										<li>Bailment</li>
+										<li>Pledge</li>
+										<li>Agency</li>
+										<li>Breach of a contract</li>
+									</ul>
+								</p>	
+							</div>
+
+							
+
+							<div id="aa9" class="tabcontent">
+								<p><img src="images/practice9.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Registration means recording of the contents of a document with a Registering Officer and preservation of copies of the original document.<br/> 
+									Document whose registration is compulsory are instruments of gift of immovable property; other non-testamentary instruments which purport or operate to create, declare, assign, limit or extinguish, whether in present or in future, any right, title or interest, whether vested or contingent, of the value of one hundred rupees, and upwards, to or in immovable property; leases of immovable property from year to year, or for any term exceeding one year, or reserving a yearly rent and non-testamentary instruments transferring or assigning any decree or order of a court or any award when such decree or order or award purports or operates to create, declare, assign, limit or extinguish, whether in present or in future, any right, title or interest, whether vested or contingent, of the value of one hundred rupees and upwards, to or in immovable property. 
+									The Registration Act, 1908 is the law relating to registration of documents. The object and purpose of the Act among other things is to give information to people regarding legal rights and obligations arising or affecting a particular property, and to perpetuate documents which may afterwards be of legal importance, and also to prevent fraud.
+
+
+									<ul>
+										<li>Relinquishment/Power Of Attorney /Will/Probate</li>
+										<li>Agreement To Sale /Sale Deed</li>
+										<li>Lease /Mortgage/Gift/Transfer/Partnership/Dissolution</li>
+										<li>Title Clearance/Search Report/Property Card</li>
+										<li>Execution etc.</li>
+									</ul>
+								</p>	
+							</div>
+
+							<div id="aa10" class="tabcontent">
+								<p><img src="images/practice10.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									A Memorandum Of Understanding (‘MOU’) is generally a preliminary understanding between the parties to a contract, prior to the execution of a formal agreement. MOU is generally executed for creating consensus between the contracting parties for future contracts and is usually not intended to have created any obligations upon the parties. Primarily, what must be understood is that a MOU is non-binding and legally non-enforceable and is only an “agreement to agree” and highlights business relationship, which, are likely to result in some contract or any formal agreement between the parties. However, a MOU may create an obligation upon the parties if a binding understanding is inferred from the clauses of the MOU.<br/>
+									In light of the above, it can be concluded that the enforceability and binding nature of a MOU depends upon the content, nature of agreement, language and intention of the parties to it. In cases wherein the MOU is in the nature of a contract and fulfills its essentials, it is held to be enforceable. A major factor to decide whether a MOU would be binding is the intention of parties while executing the MOU and their conduct post execution.
+
+
+									<ul>
+										<li>Outline / Draft MOU </li>
+										<li>Letter of Intent</li>
+										<li>Domestic and International MOU</li>
+										
+									</ul>
+								</p>	
+							</div>
+
+							<div id="aa11" class="tabcontent">
+								<p><img src="images/practice11.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									It will help realise the goal of “One Nation-One Tax-One Market.” GST is expected to benefit all the stakeholders – industry, government and consumer. GST will lower the cost of goods and services, boost to the economy and make Indian products and services globally competitive, and even boost initiatives like ‘Make in India’.<br/>
+									The GST Acts provide transitional provisions for ensuring smooth transition of existing taxpayers to GST regime, credit for available stocks, etc. Some other provisions include a system of GST Compliance Rating. Anti-profiteering provisions for protection of consumer rights have also been included in the Acts.
+
+									<ul>
+										<li>GST Filing</li>
+										<li>Documentation & Registration</li>
+										<li>Representation and Litigation</li>
+										<li>Pledge</li>
+										<li>Agency</li>
+										<li>Breach of a contract</li>
+									</ul>
+
+									Tax is the financial charge imposed by the Government on income, commodity or activity. Government imposes two types of taxes namely Direct taxes and Indirect taxes. Under direct taxes, person who pays the tax bears the burden of it e.g. Income tax, Wealth Tax etc. At present the Income Tax Act, 1961, governs the income tax in India. This act is the charging Statute of Income Tax in India. It provides for levy, administration, collection and recovery of Income Tax. The Income Tax Law comprises of the Income Tax Act 1961, Income Tax Rules 1962, Notifications and Circulars issued by Central Board of Direct Taxes (CBDT), Annual Finance Acts, Judicial pronouncements by Supreme Court and High Courts and rulings by the Tribunal.
+
+									<ul>
+										<li>Legal and Tax consultation</li>
+										<li>Representation in respected tribunal</li>
+									</ul>
+								</p>	
+							</div>
+
+
+							<div id="aa12" class="tabcontent">
+								<p><img src="images/practice12.jpg" alt="Commercial law" style="float:right;width:200px;height:170px;margin-left:15px;">
+									Exports and Imports have been made free in India, except where regulated by Foreign Trade Policy or some additional law for the time being in force. The item wise export and import policy would however be, as specified in Indian Trade Classification notified by Director General of Foreign Trade, as amended from time to time. Every exporter or importer is required to comply with the provisions of Foreign Trade (Development & Regulation) Act, the rules and orders made there-under, Foreign Trade Policy and terms and conditions of any authorization granted to him. All imported goods have also been made subject to domestic laws, rules, orders, regulations, technical specifications, environmental and safety norms as applicable to domestically produced goods.<br/> 
+									IEC Code is unique 10 digit code issued by DGFT – Director General of Foreign Trade, Ministry of Commerce, and Government of India to Indian Companies. To import or export in India, IEC Code is mandatory. No person or entity shall make any Import or Export without IEC Code Number.
+
+
+									<ul>
+										<li>Documentation For Export And Import</li>
+										<li>Litigation / Representation </li>
+									</ul>
+								</p>	
+							</div>
 					</div>
 				</div>
 			</div>
