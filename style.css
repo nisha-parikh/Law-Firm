@@ -157,7 +157,7 @@ p { margin-top: 0; }
 .text-center { text-align: center; }
 
 /* line 36, sass/libs/_global.scss */
-form input:not([type="submit"]), form select, form textarea { border: 2px solid #28292c; padding: 10px 10px 10px 40px; background-position: 10px; background-repeat: no-repeat; display: block; font-family: "Novecento Sans", "Open Sans", sans-serif; margin-bottom: 10px; font-size: 12px; font-size: 0.75em; text-transform: uppercase; width: 100%; outline: none; background-color: transparent; color: inherit; -webkit-transition: .3s ease; transition: .3s ease; }
+form input:not([type="submit"]), form select, form textarea { border: 2px solid #a0a0a2; padding: 10px 10px 10px 40px; background-position: 10px; background-repeat: no-repeat; display: block; font-family: "Novecento Sans", "Open Sans", sans-serif; margin-bottom: 10px; font-size: 12px; font-size: 0.75em; text-transform: uppercase; width: 100%; outline: none; background-color: transparent; color: inherit; -webkit-transition: .3s ease; transition: .3s ease; }
 /* line 52, sass/libs/_global.scss */
 form input:not([type="submit"]):hover, form input:not([type="submit"]):active, form input:not([type="submit"]):focus, form select:hover, form select:active, form select:focus, form textarea:hover, form textarea:active, form textarea:focus { border-color: #ac8074; }
 /* line 57, sass/libs/_global.scss */
@@ -343,7 +343,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 .team p {font-size: 1em !important; }
 
 /* line 395, sass/libs/_components.scss */
-.contact-form { margin-bottom: 50px; }
+.contact-form { margin-bottom: 50px; color: white;}
 /* line 398, sass/libs/_components.scss */
 .contact-form #name { background-image: url("images/icon-user.png"); }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) { /* line 398, sass/libs/_components.scss */
@@ -367,7 +367,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 414, sass/libs/_components.scss */
 .contact-info strong { color: white; text-transform: uppercase; font-size: 14px; font-size: 0.875em; font-family: "Novecento Sans", "Open Sans", sans-serif; display: block; margin-bottom: 10px; }
 /* line 423, sass/libs/_components.scss */
-.contact-info .contact a { display: block; color: inherit; }
+.contact-info .contact a { display: block; color:white; }
 /* line 428, sass/libs/_components.scss */
 .contact-info p { font-size: 14px; font-size: 0.875em; }
 
